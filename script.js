@@ -80,4 +80,14 @@ document.addEventListener("DOMContentLoaded", () => {
             isPlaying = true;
         }
     });
+
+
+     const letters = document.querySelectorAll(".seal-inner span");
+const splash = document.querySelector(".splash-envelope");
+
+letters.forEach(letter => {
+    letter.addEventListener("click", () => {
+        splash.classList.add("opening");
+    });
+});
 });
